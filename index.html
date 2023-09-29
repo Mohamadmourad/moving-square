@@ -8,6 +8,12 @@
     <title>Moving Square</title>
 </head>
 <body>
+    <header id="header">Moving Square <i class="fa-solid fa-square fa-spin"></i></header>
+    <div class="score" id="scoreBoard">Your Score is : <p id="score">0</p></div>
+    <nav id="nav">
+        <i class="fa-solid fa-trophy" id="leaderboard"></i>
+        <i class="fa-solid fa-dice-three"></i>
+    </nav>
     <!--moving arrows-->
    <div class="arrows">
     <button class="top arrow" id="top"><i class="fa-solid fa-angle-up"></i></button>
@@ -18,6 +24,7 @@
     <button class="bottom arrow" id="bottom"><i class="fa-solid fa-angle-up fa-rotate-180"></i></button>
 </div> 
 <div class="object" id="object"></div>
+<div class="collect" id="collect"></div>
 <script src="main.js"></script>
 </body>
 </html>

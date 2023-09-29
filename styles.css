@@ -12,6 +12,16 @@ body{
     background-color: #186F65;
 }
 
+header{
+    color: #FCE09B;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
 .arrows{
     width: 100%;
     display: flex;
@@ -22,7 +32,7 @@ body{
     margin-bottom: 40px;
     flex-direction: column;
     gap: 10px;
-    z-index: 99;
+    z-index: 98;
 }
 
 .arrows button{
@@ -47,9 +57,8 @@ body{
 }
 
 .object{
-    margin: 5px;
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
     background-color: #FCE09B;
     border-radius: 10px;
     position: relative;
@@ -58,4 +67,44 @@ body{
     top: 0;
     bottom: 0;
     z-index: 1;
+}
+
+.collect{
+    background-color: #FCE09B;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    position: fixed;
+    left: 200px;
+    top: 500px;
+    z-index: 99;
+    transition: none;
+    display: none;
+}
+
+.score{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: center;
+    justify-content: center;
+    gap: 5px;
+    color: #B5CB99;
+    font-weight: bold;
+    display: none;
+    margin-top: 10px;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 20px;
+   padding-right: 20px;
+   font-size: 20px;
+   font-weight: bold;
+   color: #B5CB99;
+   display: none;
 }
