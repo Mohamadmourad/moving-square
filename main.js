@@ -202,4 +202,17 @@ bottomBtn.addEventListener('touchend', () => {
   clearInterval(bottomInterval);
 });
 
+document.getElementById('leaderboardBtn').onclick = () => {//enter leaderboard
+    if(!localStorage.getItem(highscore)){
+        localStorage.setItem(highscore, score);
+    }
+    if(score > Math.floor(localStorage.getItem(highscore))){
+        localStorage.setItem(highscore, score);
+    }
+    document.getElementById('highscore').innerHTML = Math.floor(localStorage.getItem(highscore));
+    document.getElementById('leaderboard').style.display = 'flex';
+}
 
+document.getElementById('exit1').onclick = () => {//exit leaderboard
+    document.getElementById('leaderboard').style.display = 'none';
+}

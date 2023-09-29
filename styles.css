@@ -77,7 +77,7 @@ header{
     position: fixed;
     left: 200px;
     top: 500px;
-    z-index: 99;
+    z-index: 98;
     transition: none;
     display: none;
 }
@@ -108,3 +108,45 @@ nav{
    color: #B5CB99;
    display: none;
 }
+
+nav i:active{
+    transform: scale(0.9);
+    color: #7b8b66;
+}
+
+
+.leaderboard{
+    background-color: #B2533E;
+    width: 90%;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -45%;
+    z-index: 99;
+}
+
+.leaderboard i {
+    position: relative;
+    left: 70%;
+    bottom: 80px;
+    color: #FCE09B;
+    font-size: 20px;
+
+}
+
+.leaderboard div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    gap: 10px;
+    color: #FCE09B;
+}
+
