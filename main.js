@@ -216,3 +216,9 @@ document.getElementById('leaderboardBtn').onclick = () => {//enter leaderboard
 document.getElementById('exit1').onclick = () => {//exit leaderboard
     document.getElementById('leaderboard').style.display = 'none';
 }
+
+document.getElementById('customizeBtn').onclick = () => {
+    let random1 = Math.floor(Math.random()*251);
+    let random2 = Math.floor(Math.random()*251);
+    object.style.backgroundColor = "rgb("+random1+","+random2+",51)";
+}
