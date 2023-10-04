@@ -72,7 +72,8 @@ function rightMove(){
     object.style.left = x + "px";
     check();
     collect();
-    firstMove()
+    firstMove();
+    scoreboard();
 }
 
 function leftMove(){
@@ -80,7 +81,8 @@ function leftMove(){
     object.style.left = x + "px";
     check();
     collect();
-    firstMove()
+    firstMove();
+    scoreboard();
 }
 
 function topMove(){
@@ -88,7 +90,8 @@ function topMove(){
     object.style.top = y + "px";
     check();
     collect();
-    firstMove()
+    firstMove();
+    scoreboard();
 }
 
 function bottomMove(){
@@ -96,7 +99,8 @@ function bottomMove(){
     object.style.top = y + "px";
     check();
     collect();
-    firstMove()
+    firstMove();
+    scoreboard();
 }
 
 rightBtn.onclick = () =>{
@@ -203,6 +207,11 @@ bottomBtn.addEventListener('touchend', () => {
 });
 
 document.getElementById('leaderboardBtn').onclick = () => {//enter leaderboard
+    scoreboard();
+    document.getElementById('leaderboard').style.display = 'flex';
+}
+
+function scoreboard(){
     if(!localStorage.getItem(highscore)){
         localStorage.setItem(highscore, score);
     }
@@ -210,7 +219,6 @@ document.getElementById('leaderboardBtn').onclick = () => {//enter leaderboard
         localStorage.setItem(highscore, score);
     }
     document.getElementById('highscore').innerHTML = Math.floor(localStorage.getItem(highscore));
-    document.getElementById('leaderboard').style.display = 'flex';
 }
 
 document.getElementById('exit1').onclick = () => {//exit leaderboard
