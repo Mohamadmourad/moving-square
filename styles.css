@@ -7,7 +7,9 @@
     Box-sizing: border-box;
     Scroll-behavior:smooth;
 }
-
+html{
+    user-select: none;
+}
 body{
     background-color: #186F65;
     user-select: none;
